@@ -179,7 +179,7 @@ public final class SocketIOClient {
                                     @SuppressWarnings("unchecked")
                                     Map<String, List<String>> headers = (Map<String, List<String>>) args2[0];
                                     headers.put("Cookie", Arrays.asList(cookie));
-                                    headers.put("Origin", url);
+                                    headers.put("Origin", Arrays.asList(url));
                                 }
                             });
                         }
